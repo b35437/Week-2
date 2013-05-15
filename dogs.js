@@ -9,7 +9,6 @@ var petShop = "Dogs Haven";
 var dogName = "\"Benny\"";
 var dogBreed = ["Beagle", "Mastiff", "Bulldog", "Pitbull"];
 var dogBreedAmount = [2, 4, 2, 1];
-var myDogBreedNumber = 2;
 var currentTime = 800;
 var timeWaiting = 20;
 var ladyConversationOne = "Hello Sir, how may i help you? ";
@@ -43,7 +42,7 @@ var dogHavenOpen = function(open) {
 }
 
 //impatiently waiting for assistance i constantly
-//checked my watch, then returned totalTime.
+//checked my watch, then returned the totalTime.
 var checkTime = function(minutes) {
 	//local variables
 	var totalTime;
@@ -78,17 +77,20 @@ var dogTypes = function(types, numOfTypes) {
 	var myType = 2;
 	var newTypes;
 	var newNumOfTypes;
-	
+
 	for (var i = 0; i < types.length; i++) {
 		console.log("we currently have " + numOfTypes[i] + " " + types[i]);
 	}
-	
+	//the push method adding to the end of an array
+	//types is adding the dog types
+	//numOfTypes is adding to number of dogs of that type
 	types.push("Collie");
 	numOfTypes.push(1);
 	
+	//output the new arrays
 	console.log("Oh! we also have " + numOfTypes[i] + " " + types[i]);
 	
-	
+	//output my choice of dog.
 	console.log("I think i will pick the ");
 	return types[myType];
 }
@@ -125,7 +127,6 @@ if (dogHavenOpen(currentTime) === true) {
 
 //output to screen the checkTime function (number function)
 console.log("for a total of " + checkTime(timeWaiting) + " times");
-//checkTime(timeWaiting);
 
 //output the talkingToLday function (string function)
 //the conversation between her and I when she gets to the counter
