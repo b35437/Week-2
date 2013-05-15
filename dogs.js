@@ -78,7 +78,7 @@ if (dogHavenOpen(currentTime) === true) {
 };
 
 //output to screen the checkTime function
-console.log("for a total of " + checkTime(timeWaiting) + " minutes");
+console.log("for a total of " + checkTime(timeWaiting) + " times");
 
 
 
